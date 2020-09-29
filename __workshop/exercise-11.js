@@ -6,8 +6,14 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function calculateAverage(grades) {
-  // grades is an array of numbers
+  let sum = 0
+
+  for (let x = 0; x < grades.length; x++) {
+    sum += grades[x];
+  } return Math.round(sum / grades.length);
 }
+
+console.log (calculateAverage ([75, 85, 56, 96, 63, 80]));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

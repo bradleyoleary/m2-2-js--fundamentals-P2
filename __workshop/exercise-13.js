@@ -7,7 +7,17 @@
 // -----------------------------------------------------------------
 function countBs(str) {
   // str is a string
+  let letterB = str.split ("");
+  
+  let count = 0;
+  letterB.forEach(function (letter) {
+    if (letter === "B") count += 1;
+  });
+  
+  return count;
 }
+
+console.log(countBs("Blah Blah Blee Blee"))
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

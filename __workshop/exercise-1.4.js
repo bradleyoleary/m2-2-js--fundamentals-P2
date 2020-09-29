@@ -13,10 +13,13 @@
 // shortenName(Morty Antoine Fred Bacon Smith") should return "Morty Smith"
 
 //
-// Edit only the code between the lines (below)
+// Edit only the code between the lines (below)FINISH TOMORROW MORNING
 // -----------------------------------------------------------------
 function removeMiddleName(string) {
-  // complete the function
+  let names = string.split(' ')
+  let first = names [0];
+  let last = last [names.length - 1]
+  return `${First}  ${Last}`;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)

@@ -8,8 +8,11 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function allLong(list) {
-  // list is an array of strings
+  return list.every(word => word.length > 5);
 }
+
+console.log(allLong(["Heyyyyyy", "Hellooooo", "Yooooo", "Hiiiiii"]));
+console.log(allLong(["Hey", "Hello", "Yo", "Hi"]));
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
 

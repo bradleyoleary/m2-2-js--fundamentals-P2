@@ -12,6 +12,19 @@
 // -----------------------------------------------------------------
 function findNumbers(num1, num2) {
   // num1 and num2 are Numbers
+  let answerArr = [];
+
+  for (let x = num1; x <=num2; x++) {
+    let digits = x.toString().split("");
+    let sum = 0;
+
+    digits.forEach(function (digit) {
+      sum += Number(digit) * Number(digit) * Number(digit)
+    });
+    if (sum === x) answerArr.push(x);
+  }
+
+  return answerArr;
 }
 // -----------------------------------------------------------------
 // Edit only the code between the lines (above)
