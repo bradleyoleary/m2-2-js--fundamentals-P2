@@ -13,14 +13,15 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function getLetterGrade(grades) {
-  let sum = 0
-  let average = Math.round (sum / grades.length);
+  
+  const average = grades.reduce((a,b) => a + b, 0) / grades.length
+
   let ltrGrade = "A";
 
-  if (average <90) ltrGrade = "B";
-  if (average <80) ltrGrade = "C";
-  if (average <70) ltrGrade = "D";
-  if (average <60) ltrGrade = "F";
+  if (average < 90) ltrGrade = "B";
+  if (average < 80) ltrGrade = "C";
+  if (average < 70) ltrGrade = "D";
+  if (average < 60) ltrGrade = "F";
 
   return ltrGrade;
 }

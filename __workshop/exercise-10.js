@@ -8,7 +8,7 @@
 // Edit only the code between the lines (below)
 // -----------------------------------------------------------------
 function allLong(list) {
-  return list.every(word => word.length > 5);
+  return list.every(word => word.length > 4);
 }
 
 console.log(allLong(["Heyyyyyy", "Hellooooo", "Yooooo", "Hiiiiii"]));
